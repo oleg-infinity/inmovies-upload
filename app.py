@@ -18,7 +18,8 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///instance/users.db'
 
-#csrf = CSRFProtect(app)
+csrf = CSRFProtect(app)
+csrf.init_app(app)
 
 db = SQLAlchemy(app)  # Primary database
 migrate = Migrate(app, db)
