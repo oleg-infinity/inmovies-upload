@@ -18,7 +18,7 @@ Edit User Page
             </div>
             <div class="info">
                 <form method="post" action="/edit_user">
-                    {{ csrf_token() }}
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
                     <input type="text" class="edit-input username-input" name="username" value="{{ username }}" required>
                     <input type="email" class="edit-input email-input" name="email" value="{{ email }}" required>
                     <button type="submit" class="save-changes">Save Changes</button>

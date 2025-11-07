@@ -6,4 +6,5 @@ python-slugify
 itsdangerous
 flask-wtf
 python-dotenv
+slugify
 gunicorn

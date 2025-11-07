@@ -10,7 +10,7 @@ Log In
         <div class="container_content">
             <h1 class="content_title">Login</h1>
             <form method="post" action="{{ url_for('login') }}">
-                {{ csrf_token() }}
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
                 <!-- <label for="email">Email:</label> -->
                 <input type="email" id="email" name="email" class="data-form-inputs" required>
                 <!-- <label for="password">Password:</label> -->

@@ -21,7 +21,7 @@ Sign Up
                         <td>{{ user.username }}</td>
                         <td>
                             <form method="post" action="{{ url_for('admin') }}">
-                                {{ csrf_token() }}
+                                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
                                 <input type="hidden" name="user_id" value="{{ user.id }}">
                                 <button type="submit" name="action" value="delete" class="">Delete</button>
                                 <input type="password" name="new_password" placeholder="Enter new password">

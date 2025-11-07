@@ -10,21 +10,22 @@ Sign Up
         <div class="container_content">
             <h1 class="content_title">Register</h1>
             <form method="post" action="{{ url_for('register') }}">
+                <!-- CSRF token один раз на форму -->
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
                 <div class="">
-                    {{ csrf_token() }}
                     <!-- <label for="username">Username:</label> -->
                     <input type="text" name="username" placeholder="Type here your Username..." class="data-form-inputs" required>
                 </div>
                 <div class="">
-                    {{ csrf_token() }}
                     <!-- <label for="password">Password:</label> -->
                     <input type="password" name="password" placeholder="Type here your Password..." class="data-form-inputs" required>
                 </div>
                 <div class="">
-                    {{ csrf_token() }}
                     <!-- <label for="email">Email:</label> -->
                     <input type="email" name="email" placeholder="Type here your Email..." class="data-form-inputs" required>
                 </div>
+
                 {% with messages = get_flashed_messages() %}
                     {% if messages %}
                         {% for message in messages %}
@@ -32,6 +33,7 @@ Sign Up
                         {% endfor %}
                     {% endif %}
                 {% endwith %}
+
                 <button type="submit" class="save-changes">Register</button>
             </form>
         </div>
