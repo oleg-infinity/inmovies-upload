@@ -12,13 +12,13 @@ from flask import flash
 from itsdangerous import URLSafeTimedSerializer
 from flask_wtf import CSRFProtect
 
-csrf = CSRFProtect(app)
-
 load_dotenv()
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+
+csrf = CSRFProtect(app)
 
 db = SQLAlchemy(app)  # Primary database
 migrate = Migrate(app, db)
