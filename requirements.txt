@@ -1,0 +1,9 @@
+flask
+flask_sqlalchemy
+flask_migrate
+flask_login
+python-slugify
+itsdangerous
+flask-wtf
+python-dotenv
+gunicorn
