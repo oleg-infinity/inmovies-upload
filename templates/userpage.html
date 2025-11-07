@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}
+User Page
+{% endblock %}
+
+{% block body %}
+    <main class="main__userp">
+        <div class="userp__exit">
+            <a href="/logout" class="exit__link">
+                <span class="material-symbols-outlined exit-icon">logout</span>
+                <h4 class="exit-text">Log Out</h4>
+            </a>
+        </div>
+        <div class="userp__container">
+            <div class="top">
+                <div class="bgimg">
+                    <img src="{{ url_for('static', filename='images/userbg1.jpg') }}" alt="">
+                </div>
+                <div class="avatar">
+                    <img src="{{ url_for('static', filename='images/whitebg.jfif') }}" id="whitebg" alt="">
+                    <img src="{{ url_for('static', filename='images/pfp.jfif') }}" id="ava" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <h1 class="username">{{ username }}</h1>
+                <h4 class="info__email">{{ email }}</h4>
+                <div class="edit__div">
+                    <a href="/edit_user" id="edit">
+                        <h6 class="edit-text">Edit</h6>
+                    </a>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="ratecolumn">
+                    <a href=""><h2>Follows</h2></a>
+                    <h1>1603</h1>
+                </div>
+                <div class="ratecolumn">
+                    <a href=""><h2>Followers</h2></a>
+                    <h1>69</h1>
+                </div>
+                <div class="ratecolumn">
+                    <a href=""><h2>Likes</h2></a>
+                    <h1>3061</h1>
+                </div>
+                <div class="ratecolumn">
+                    <a href=""><h2>Comments</h2></a>
+                    <h1>3061</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

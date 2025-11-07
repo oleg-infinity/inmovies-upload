@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Sign Up
+{% endblock %}
+
+{% block body %}
+<main class="main__admin">
+    <div class="admin__panel">
+        <h1>Admin Panel</h1>
+        <table class="panel__table">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                    <tr>
+                        <td>{{ user.username }}</td>
+                        <td>
+                            <form method="post" action="{{ url_for('admin') }}">
+                                {{ csrf_token() }}
+                                <input type="hidden" name="user_id" value="{{ user.id }}">
+                                <button type="submit" name="action" value="delete" class="">Delete</button>
+                                <input type="password" name="new_password" placeholder="Enter new password">
+                                <button type="submit" name="action" value="change_password" class="">Change Password</button>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</main>
+{% endblock %}

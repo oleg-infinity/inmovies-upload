@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Edit User Page
+{% endblock %}
+
+{% block body %}
+    <main class="main__userp">
+        <div class="userp__container">
+            <div class="top">
+                <div class="bgimg">
+                    <img src="{{ url_for('static', filename='images/userbg1.jpg') }}" alt="">
+                </div>
+                <div class="avatar">
+                    <img src="{{ url_for('static', filename='images/whitebg.jfif') }}" id="whitebg" alt="">
+                    <img src="{{ url_for('static', filename='images/pfp.jfif') }}" id="ava" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <form method="post" action="/edit_user">
+                    {{ csrf_token() }}
+                    <input type="text" class="edit-input username-input" name="username" value="{{ username }}" required>
+                    <input type="email" class="edit-input email-input" name="email" value="{{ email }}" required>
+                    <button type="submit" class="save-changes">Save Changes</button>
+                </form>
+            </div>
+            <div class="stats">
+                <div class="ratecolumn">
+                    <a href=""><h2>Follows</h2></a>
+                    <h1>1603</h1>
+                </div>
+                <div class="ratecolumn">
+                    <a href=""><h2>Followers</h2></a>
+                    <h1>69</h1>
+                </div>
+                <div class="ratecolumn">
+                    <a href=""><h2>Likes</h2></a>
+                    <h1>3061</h1>
+                </div>
+                <div class="ratecolumn">
+                    <a href=""><h2>Comments</h2></a>
+                    <h1>3061</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

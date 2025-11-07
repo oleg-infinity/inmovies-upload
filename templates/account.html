@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Account
+{% endblock %}
+
+{% block body %}
+<main class="main__userp">
+    <div class="account__container">
+        <div class="container__content">
+            <h1>Oops!</h1>
+            <h2>It looks like you are not logged into your account yet.</h2>
+            <p class="content-text">
+                If you do not have an account, you can register by clicking sign up.
+                If you already have an account, click log in and enter!
+            </p>
+            <ul class="content__list">
+                <li class="list-el">
+                    <a href="/register" class="el-link">Sign Up</a>
+                </li>
+                <li class="list-el">
+                    <a href="/login" class="el-link">Log In</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+{% endblock %}

@@ -1,0 +1,229 @@
+{% extends 'base.html' %}
+
+{% block title %}
+User Page
+{% endblock %}
+
+{% block body %}
+    <main class="main__top-movies">
+        <div class="intro">
+            <div class="introtitle">
+                <h1>Top Movies</h1>
+            </div>
+            <div class="introtext">
+                <p>Ви знаходитесь на вкладці «Топ фільмів».
+                    Також ви можете переглянути топ фільмів
+                    на думку авиора сайту, перейшовши за цим посиланням:
+                    <br>
+                    <br>
+                    <a class="top_movies_oleg-link" href="/top_movies_by_oleg">Top Movies By Oleg</a>
+                    <br>
+                    <br>
+                    Бажаю найти хороший фільм на вечір!
+                </p>
+            </div>
+        </div>
+        <section class="bms">
+            <div class="imgbox">
+                <img src="/static/images/top_movies/t1.jpg" alt="" class="imginbox">
+            </div>
+            <div class="otherbox">
+                <h1 class="moviename">1. The Shawshank Redemption</h1>
+                <h3 class="genre">Драма</h3>
+                <h4 class="time">2год 22хв</h4>
+                <p class="description">
+                    Протягом кількох років двоє засуджених зав’язують дружбу,
+                    шукаючи розради та, зрештою, спокути через базове співчуття.
+                </p>
+                <div class="rate">
+                    <span class="material-symbols-outlined like">thumb_up</span>
+                    <span class="material-symbols-outlined dislike">thumb_down</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="bms">
+            <div class="imgbox">
+                <img src="/static/images/top_movies/t2.jpg" alt="" class="imginbox">
+            </div>
+            <div class="otherbox">
+                <h1 class="moviename">2. The Godfather</h1>
+                <h3 class="genre">Кримінал/Драма</h3>
+                <h4 class="time">2год 55хв</h4>
+                <p class="description">
+                    Старіючий патріарх організованої злочинної
+                    династії передає контроль над своєю таємною імперією своєму
+                    неохоче синові.
+                </p>
+                <div class="rate">
+                    <span class="material-symbols-outlined like">thumb_up</span>
+                    <span class="material-symbols-outlined dislike">thumb_down</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="bms">
+            <div class="imgbox">
+                <img src="/static/images/top_movies/t3.jpg" alt="" class="imginbox">
+            </div>
+            <div class="otherbox">
+                <h1 class="moviename">3. The Dark Knight</h1>
+                <h3 class="genre">Екшн/Кримінал</h3>
+                <h4 class="time">2год 32хв</h4>
+                <p class="description">
+                    Коли загроза, відома як Джокер, сіє хаос і
+                    хаос серед жителів Готема, Бетмен повинен прийняти одне з
+                    найбільших психологічних і фізичних випробувань своєї
+                    здатності боротися з несправедливістю.
+                </p>
+                <div class="rate">
+                    <span class="material-symbols-outlined like">thumb_up</span>
+                    <span class="material-symbols-outlined dislike">thumb_down</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="bms">
+            <div class="imgbox">
+                <img src="/static/images/top_movies/t4.jpg" alt="" class="imginbox">
+            </div>
+            <div class="otherbox">
+                <h1 class="moviename">4. The Godfather Part II</h1>
+                <h3 class="genre">Драма/Кримінал</h3>
+                <h4 class="time">3год 22хв</h4>
+                <p class="description">
+                    Зображується раннє життя та кар’єра Віто
+                    Корлеоне в Нью-Йорку 1920-х років, у той час як його син
+                    Майкл розширює та зміцнює контроль над сімейним
+                    злочинним синдикатом.
+                </p>
+                <div class="rate">
+                    <span class="material-symbols-outlined like">thumb_up</span>
+                    <span class="material-symbols-outlined dislike">thumb_down</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="bms">
+            <div class="imgbox">
+                <img src="/static/images/top_movies/t5.jpg" alt="" class="imginbox">
+            </div>
+            <div class="otherbox">
+                <h1 class="moviename">5. 12 Angry Men</h1>
+                <h3 class="genre">Драма/Кримінал</h3>
+                <h4 class="time">1год 36хв</h4>
+                <p class="description">
+                    Суд присяжних у справі про вбивство в Нью-Йорку
+                    розчарований одним членом, чия скептична обережність змушує
+                    їх ретельніше розглянути докази, перш ніж поспішно винести вердикт.
+                </p>
+                <div class="rate">
+                    <span class="material-symbols-outlined like">thumb_up</span>
+                    <span class="material-symbols-outlined dislike">thumb_down</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="bms">
+            <div class="imgbox">
+                <img src="/static/images/top_movies/t6.jpg" alt="" class="imginbox">
+            </div>
+            <div class="otherbox">
+                <h1 class="moviename">6. Schindler's List</h1>
+                <h3 class="genre">Біографія/Кримінал</h3>
+                <h4 class="time">3год 15хв</h4>
+                <p class="description">
+                    В окупованій Німеччиною Польщі під час Другої світової війни
+                    промисловець Оскар Шиндлер поступово починає хвилюватися за
+                    свою єврейську робочу силу після того, як
+                    став свідком їхнього переслідування з боку нацистів.
+                </p>
+                <div class="rate">
+                    <span class="material-symbols-outlined like">thumb_up</span>
+                    <span class="material-symbols-outlined dislike">thumb_down</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="bms">
+            <div class="imgbox">
+                <img src="/static/images/top_movies/t7.jpg" alt="" class="imginbox">
+            </div>
+            <div class="otherbox">
+                <h1 class="moviename">7. The Lord of the Rings: The Return of the King</h1>
+                <h3 class="genre">Екшн/Пригоди</h3>
+                <h4 class="time">3год 21хв</h4>
+                <p class="description">
+                    Гендальф і Арагорн ведуть Світ Людей проти армії Саурона,
+                    щоб відвернути його погляд від Фродо та Сема, коли вони
+                    наближаються до Гори Дум із Єдиним Перснем.
+                </p>
+                <div class="rate">
+                    <span class="material-symbols-outlined like">thumb_up</span>
+                    <span class="material-symbols-outlined dislike">thumb_down</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="bms">
+            <div class="imgbox">
+                <img src="/static/images/top_movies/t8.jpg" alt="" class="imginbox">
+            </div>
+            <div class="otherbox">
+                <h1 class="moviename">8. Pulp Fiction</h1>
+                <h3 class="genre">Драма/Кримінал</h3>
+                <h4 class="time">2год 34хв</h4>
+                <p class="description">
+                    Життя двох бандитів, боксера, гангстера та його дружини, а
+                    також пари бандитів-закусочників переплітаються в чотирьох
+                    історіях про насильство та спокуту.
+                </p>
+                <div class="rate">
+                    <span class="material-symbols-outlined like">thumb_up</span>
+                    <span class="material-symbols-outlined dislike">thumb_down</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="bms">
+            <div class="imgbox">
+                <img src="/static/images/top_movies/t9.jpg" alt="" class="imginbox">
+            </div>
+            <div class="otherbox">
+                <h1 class="moviename">9. The Lord of the Rings: The Fellowship of the Ring</h1>
+                <h3 class="genre">Екшн/Пригоди</h3>
+                <h4 class="time">2год 58хв</h4>
+                <p class="description">
+                    Лагідний хоббіт із Ширу та вісім товаришів вирушають у подорож,
+                    щоб знищити могутній Єдиний Перстень і
+                    врятувати Середзем’я від темного лорда Саурона.
+                </p>
+                <div class="rate">
+                    <span class="material-symbols-outlined like">thumb_up</span>
+                    <span class="material-symbols-outlined dislike">thumb_down</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="bms">
+            <div class="imgbox">
+                <img src="/static/images/top_movies/t10.jpg" alt="" class="imginbox">
+            </div>
+            <div class="otherbox">
+                <h1 class="moviename">10. The Good, the Bad and the Ugly</h1>
+                <h3 class="genre">Вестерн/Пригоди</h3>
+                <h4 class="time">2год 41хв</h4>
+                <p class="description">
+                    Шахрайство з полюванням за головами об’єднує двох чоловіків у
+                    непростий альянс проти третього в гонці,
+                    щоб знайти золоті статки, поховані на віддаленому
+                    кладовищі.
+                </p>
+                <div class="rate">
+                    <span class="material-symbols-outlined like">thumb_up</span>
+                    <span class="material-symbols-outlined dislike">thumb_down</span>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

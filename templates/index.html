@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block body %}
+    <main class="main__home">
+        <div class="intro">
+            <div class="introtitle">
+                <h1>Home</h1>
+            </div>
+            <div class="introtext">
+                <p>Ви знаходитесь на вкладці «Головна»
+                    <br>
+                    На цій сторінці ви можете знайти різноманітні обговорення
+                    щодо тих чи інших фільмів, новинки в кіноіндустрії, а також
+                    фільм з рубкрики «Випадковий фільм» який змінюється щодня!
+                   <br>
+                   Бажаю найти хороший фільм на вечір!
+                </p>
+            </div>
+        </div>
+
+        <div class="sec_one_aside">
+            <section class="sec_one">
+                <div class="sec_one_cont">
+                    <div class="imgbox-mini">
+                        <img class="img-mini" src="/static/images/imaginary.jpg" alt="">
+                    </div>
+                    <div class="otherbox-mini">
+                        <h1 class="moviename">Imaginary</h1>
+                        <h3 class="genre">Жахи/Детектив</h3>
+                        <h4 class="time">1год 44хв</h4>
+                        <p class="description-mini">
+                            «Уявне» — американський фільм жахів про
+                            надприродне 2024 року, знятий режисером і
+                            продюсером Джеффом Уодлоу за сценарієм Уодлоу,
+                            Грега Ерба та Джейсона Оремленда. Його спільно
+                            виробляє Джейсон Блум через його банер Blumhouse
+                            Productions і Tower of Babble.
+                        </p>
+                    </div>
+                </div>
+                <div class="white_arr">
+                    <h1>«Новинки»</h1>
+                    <img src="/static/images/arrow1.png" alt="">
+                </div>
+            </section>
+    
+            <aside>
+                <div class="aside_cont">
+                    <div class="news_title_block">
+                        <h1 class="news">Latest Movie News</h1>
+                        <h4 class="undertitle">Taken from <a class="undertitle-link" href="https://www.empireonline.com/movies/news/">Empire</a></h4>
+                    </div>
+                    <hr class="news_blocks_hr">
+                    <div class="news_block">
+                        <ul class="news_states">
+                            <li class="news-el">
+                                <h4 class="news-title">
+                                    Star Wars
+                                </h4>
+                                <p class="news_description">
+                                    Rogue Squadron Back In Development According To Patty Jenkins
+                                </p>
+                            </li>
+                            <li class="news-el">
+                                <h4 class="news-title">
+                                    Jennifer Lopez
+                                </h4>
+                                <p class="news_description">
+                                    Jennifer Lopez Must Hunt Down A Renegade Robot In The Atlas Teaser Trailer
+                                </p>
+                            </li>
+                            <li class="news-el">
+                                <h4 class="news-title">
+                                    Batman
+                                </h4>
+                                <p class="news_description">
+                                    The Batman Part II Pushed Back To 2026
+                                </p>
+                            </li>
+                        </ul>
+                        <h4 class="news-date">News Date: 13-14.03.2024</h4>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <section>
+            <div class="sec_two">
+                
+            </div>
+        </section>
+    </main>
+{% endblock %}
