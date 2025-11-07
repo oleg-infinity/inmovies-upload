@@ -8,3 +8,4 @@ flask-wtf
 python-dotenv
 slugify
 gunicorn
+psycopg2-binary
