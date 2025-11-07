@@ -16,9 +16,9 @@ load_dotenv()
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///instance/users.db'
 
-csrf = CSRFProtect(app)
+#csrf = CSRFProtect(app)
 
 db = SQLAlchemy(app)  # Primary database
 migrate = Migrate(app, db)
